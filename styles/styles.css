@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #761e1e;
+    --secondary-color: #757575;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: relative;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* Add this to your styles.css file */
+.hero {
+    background: url('../images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fcfcfbc0;
+    box-shadow: 4px 4px 8px var(--primary-color);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.about-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--primary-color);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.about-item p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+/* Add this to your styles.css file */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.testimonials h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.testimonial h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.testimonial:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.testimonial:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.testimonial:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.testimonial:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.quote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1rem;
+    color: #666;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-item {
+    margin: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.footer-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.footer-rights {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 961px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100%;
+        background-color: var(--primary-color);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        display: none; /* Ensure mobile nav is hidden by default */
+    }
+
+    .mobile-nav.active {
+        right: 0;
+        display: block; /* Show mobile nav when active */
+    }
+
+    .mobile-nav-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .mobile-nav h1 {
+        color: #fff;
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .mobile-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .mobile-nav-item {
+        margin: 1rem 0;
+    }
+
+    .mobile-nav-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .mobile-nav-link:hover {
+        background-color: #555;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item {
+        width: 80%;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .about-item {
+        width: 90%;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-item p {
+        font-size: 0.9rem;
+    }
+}

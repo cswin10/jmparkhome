@@ -1,0 +1,182 @@
+.services {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+.services-nav {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.services-nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.services-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    background-color: var(--primary-color);
+    display: inline-block;
+}
+
+.services-nav a:hover {
+    color: var(--primary-color);
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.service-content {
+   display: flex;
+}
+
+.service h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+
+.service p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gallery img {
+    width: calc(50% - 0.5rem);
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Add this to your services.css file */
+.kitchen-repairs {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kitchen-repairs:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.kitchen-repairs h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.kitchen-repairs-content {
+    margin-bottom: 1rem;
+}
+
+.kitchen-repairs-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.kitchen-repairs-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.kitchen-repairs-gallery img {
+    width: calc(20% - 0.8rem);
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kitchen-repairs-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .kitchen-repairs-gallery img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+    .service-content {
+        flex-direction: column;
+    }
+
+    .service img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .service-content {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
