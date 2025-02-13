@@ -118,6 +118,7 @@ main {
 /* Add this to your styles.css file */
 .hero {
     background: url('../images/hero-image.png');
+    width: 100%;
     background-size: cover;
     background-position: center;
     height: 100vh;

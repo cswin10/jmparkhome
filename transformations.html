@@ -31,10 +31,13 @@
 <!-- .ico favicon -->
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <link rel="stylesheet" href="./styles/transformations.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="./styles/styles.css" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
-        <noscript><link rel="stylesheet" href="./styles/styles.css"></noscript>
-        <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+          <!-- Preload CSS files -->
+    <link rel="preload" href="./styles/styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+
+    <!-- Load CSS files -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 <body>
     <nav class="navbar">
@@ -74,11 +77,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (2).jpg" alt="Before 1" class="transformation-image">
+                    <img src="images/transformations/transformations (2).jpg" alt="Before 1" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (1).jpg" alt="After 1" class="transformation-image">
+                    <img src="images/transformations/transformations (1).jpg" alt="After 1" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -87,11 +90,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (10).jpg" alt="Before 2" class="transformation-image">
+                    <img src="images/transformations/transformations (10).jpg" alt="Before 2" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (11).jpg" alt="After 2" class="transformation-image">
+                    <img src="images/transformations/transformations (11).jpg" alt="After 2" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -99,11 +102,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (20).jpg" alt="Before 2" class="transformation-image">
+                    <img src="images/transformations/transformations (20).jpg" alt="Before 2" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (13).jpg" alt="After 2" class="transformation-image">
+                    <img src="images/transformations/transformations (13).jpg" alt="After 2" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -111,11 +114,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (18).jpg" alt="Before 2" class="transformation-image">
+                    <img src="images/transformations/transformations (18).jpg" alt="Before 2" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (17).jpg" alt="After 2" class="transformation-image">
+                    <img src="images/transformations/transformations (17).jpg" alt="After 2" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -123,11 +126,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (19).jpg" alt="Before 2" class="transformation-image">
+                    <img src="images/transformations/transformations (19).jpg" alt="Before 2" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (16).jpg" alt="After 2" class="transformation-image">
+                    <img src="images/transformations/transformations (16).jpg" alt="After 2" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -135,11 +138,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (14).jpg" alt="Before 2" class="transformation-image">
+                    <img src="images/transformations/transformations (14).jpg" alt="Before 2" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (12).jpg" alt="After 2" class="transformation-image">
+                    <img src="images/transformations/transformations (12).jpg" alt="After 2" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
@@ -147,11 +150,11 @@
             <div class="transformation-gallery">
                 <div class="gallery-column">
                     <h3>Before</h3>
-                    <img src="images/transformations/transformations (15).jpg" alt="Before 2" class="transformation-image">
+                    <img src="images/transformations/transformations (15).jpg" alt="Before 2" class="transformation-image" loading="lazy">
                 </div>
                 <div class="gallery-column">
                     <h3>After</h3>
-                    <img src="images/transformations/transformations (6).jpg" alt="After 2" class="transformation-image">
+                    <img src="images/transformations/transformations (6).jpg" alt="After 2" class="transformation-image" loading="lazy">
                 </div>
             </div>
         </section>
