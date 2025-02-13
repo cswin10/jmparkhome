@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #761e1e;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-contact p {
+    margin: 0;
+    padding: 0 1rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.contact-contact a {
+    color: #761e1e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-contact a:hover {
+    color: #555;
+}
+
+.contact-contact strong {
+    font-weight: bold;
+}
