@@ -165,6 +165,26 @@ main {
     transition: background-color 0.3s ease;
 }
 
+.hero-trust {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-trust-image {
+    max-width: 160px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hero-trust-text {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333;
+}
+
 .cta-button:hover {
     background-color: #555;
 }
@@ -512,6 +532,10 @@ main {
         padding: 20px;
         align-items: center;
         text-align: center;
+    }
+
+    .hero-trust {
+        align-items: center;
     }
 
     .hero-title1, .hero-title, .hero-subtitle, .hero-subtitle2 {
