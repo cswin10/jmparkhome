@@ -121,19 +121,18 @@ main {
 /* Add this to your styles.css file */
 .hero {
     display: flex;
-    height: 75vh;
+    min-height: 75vh;
     width: 100%;
     border-bottom: 2px solid var(--primary-color);
 }
 
 .hero-image {
     background: url('../images/hero-image.webp') no-repeat center center/cover;
-    width: 75%;
-    height: 100%;
+    width: 70%;
 }
 
 .hero-content {
-    width: 25%;
+    width: 30%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -166,22 +165,22 @@ main {
 }
 
 .hero-trust {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .hero-trust-image {
-    max-width: 160px;
+    width: 100%;
+    max-width: 140px;
     height: auto;
-    border-radius: 5px;
 }
 
 .hero-trust-text {
-    margin-top: 8px;
+    margin: 6px 0 0;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #333;
 }
 
